@@ -13,11 +13,11 @@ output: html_document
 </p>
 <br>
 
-🚨*THIS IS A FICTIONAL PROFILE MEANT AS AN EXAMPLE FOR THE DATA KORLAB COMMUNITY.* 
-<br><br><br>
-👋🏽 Hello, my name is John Appleseed. 
 
-🎓 Soon to be grad with a M.S. in Data Science at ABC University. (May 2022)
+<br><br><br>
+👋🏽 Hello, my name is Yeji Kim. 
+
+🎓 Soon to be grad with a M.S. in Statistics at Stony Brook University. (December 2024)
 
 🌇 New York City Native, with a passion for developing and applying mathematical and statistical models to hands-on strategies that will grow business.
 

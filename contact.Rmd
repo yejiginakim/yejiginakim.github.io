@@ -1,7 +1,7 @@
 
 ---
 title: ""
-author: "John Appleseed"
+author: "Yeji Kim"
 date: 
 output: html_document
 ---
@@ -12,9 +12,9 @@ output: html_document
 
 <br><br><br><br><br><br>
 
-#### **John Appleseed**
-##### M.S. Candidate in Data Science | ABC University <img src="images/college_logo.png" style="width:35%;" align="right">
+#### **Yeji Kim**
+##### M.S. Candidate in Statistics | Stony Brook University <img src="images/college_logo.png" style="width:25%;" align="right">
 
-📍 Seoul <br>
-📱 (123) 456 - 7890 <br>
-✉️ [jappleseed@abc.edu](mailto:jappleseed@abc.edu) <br>
+📍 Stony Brook, NY <br>
+📱 (631) 334 - 5455 <br>
+✉️ [yeji728@gmail.com](mailto:yeji728@gmail.com) <br>
