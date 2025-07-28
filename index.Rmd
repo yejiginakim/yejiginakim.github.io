@@ -17,9 +17,9 @@ output: html_document
 <br><br><br>
 👋🏽 Hello, my name is Yeji Kim. 
 
-🎓 Soon to be grad with a M.S. in Statistics at Stony Brook University. (December 2024)
+🎓 I hold an M.S. in Statistics from Stony Brook University, where I developed a strong foundation in both theoretical and applied statistics. I graduated in December 2024.
 
-🌇 New York City Native, with a passion for developing and applying mathematical and statistical models to hands-on strategies that will grow business.
+🌇  Living in Korea, I continue to pursue my passion for applying statistical and mathematical models to real-world business strategies that promote growth.
 
 📚 I began my higher education at Suny Korea, part of Stony Brook University, absorbing the foundational principles of statistics in a curriculum aligned with its U.S. standards. Transitioning to Stony Brook University in the United States for my mandatory final undergraduate year, I continued to engage with core statistical concepts, setting the stage for advanced study. My pursuit of a Master’s degree, also at Stony Brook, has deepened my understanding of statistics, preparing me for its practical application in data-driven business environments. I am set to graduate in the fall of 2024.
 
