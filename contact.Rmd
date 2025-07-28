@@ -15,6 +15,6 @@ output: html_document
 #### **Yeji Kim**
 ##### M.S. Candidate in Statistics | Stony Brook University <img src="images/college_logo.png" style="width:25%;" align="right">
 
-📍 Stony Brook, NY <br>
-📱 (631) 334 - 5455 <br>
+📍 Seoul, Korea <br>
+📱 010-2966-6551 <br>
 ✉️ [yeji728@gmail.com](mailto:yeji728@gmail.com) <br>
