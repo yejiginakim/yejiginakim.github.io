@@ -1,0 +1,41 @@
+---
+pagetitle: "Index"
+output: html_document
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
+
+<br>
+
+<p align="center">
+<img src="images/profile_pic.jpeg" style="width:50%; border:0.5px solid; margin-right: 20px" align="center">
+</p>
+<br>
+
+
+<br><br><br>
+👋🏽 Hello, my name is Yeji Kim. 
+
+🎓 Soon to be grad with a M.S. in Statistics at Stony Brook University. (December 2024)
+
+🌇 New York City Native, with a passion for developing and applying mathematical and statistical models to hands-on strategies that will grow business.
+
+📚 I began my higher education at Suny Korea, part of Stony Brook University, absorbing the foundational principles of statistics in a curriculum aligned with its U.S. standards. Transitioning to Stony Brook University in the United States for my mandatory final undergraduate year, I continued to engage with core statistical concepts, setting the stage for advanced study. My pursuit of a Master’s degree, also at Stony Brook, has deepened my understanding of statistics, preparing me for its practical application in data-driven business environments. I am set to graduate in the fall of 2024.
+
+
+💻 In the future, I aspire to apply my skills in data analysis to drive impactful marketing strategies. My goal is to work collaboratively with marketing teams, using data-driven insights to enhance decision-making and optimize business outcomes.
+
+
+🏔 In my free time, I enjoy listening to songs by the K-pop idol group Day6.
+
+💪 Data Analysis with a specialty in interpreting and leveraging large datasets to derive actionable insights and inform business strategies
+
+💪 Statistical Modeling applying advanced statistical techniques to solve complex problems across various business contexts
+
+💪 Technical Skills proficient in R, Python, and SQL for comprehensive data manipulation and analysis
+
+💪 Innovative Problem-Solving adept at employing creative approaches to tackle challenges in data-intensive environments
+
++ Programming: Python, R
++ Database: SQL
