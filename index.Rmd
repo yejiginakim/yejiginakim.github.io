@@ -37,5 +37,5 @@ output: html_document
 
 💪 Innovative Problem-Solving adept at employing creative approaches to tackle challenges in data-intensive environments
 
-+ Programming: Python, R
++ Programming: Python, R, Matlab
 + Database: SQL
