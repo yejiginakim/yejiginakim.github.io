@@ -15,7 +15,7 @@ output: html_document
 
 
 <br><br><br>
-👋🏽 Hello, my name is Yeji Kim. 
+👋🏽 Hello, my name is Yeji Kim. nothing
 
 🎓 I hold an M.S. in Statistics from Stony Brook University, where I developed a strong foundation in both theoretical and applied statistics. I graduated in December 2024.
 
