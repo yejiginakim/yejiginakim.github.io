@@ -16,11 +16,13 @@ output:
 
 
 ---
-title: "나의 Tableau 대시보드 삽입 예시"
+title: "Data Analysis-Roadkill Level"
 output: html_document
 ---
 
-## Tableau Dashboard 삽입
+## **Predicting Roadkill Level in Hongcheon, Gangwondo, Korea** 
+
+This dashboard shows the roadkill points that occurred in Hongcheon, Gangwon-do, Korea, during 2020, 2021, and 2022.
 
 <div style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px;">
   <iframe
@@ -34,19 +36,13 @@ output: html_document
 
 
 
-## **Predicting House Prices in Iowa**
-
-![](https://img.shields.io/badge/Using-Python-blue)
-![](https://img.shields.io/badge/-LASSO-red)
-![](https://img.shields.io/badge/-XGBoost-success)
-
 
 
 
 
 <br>
 
-🚨**THIS IS A FICTIONAL PROJECT MEANT AS AN EXAMPLE FOR THE STEPBYSTAT COMMUNITY.**
+
 
 <br><br><br>
 
@@ -65,21 +61,41 @@ output: html_document
 <br><br>
 
 ### 2. Goal
-To predict the final price of each home using 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa.
-
 <br>
+The ultimate goal is not only to predict roadkill risk levels (low, medium, high) in Hongcheon, but also to analyze the environmental and infrastructural characteristics of high-risk grids, providing deeper insights into why incidents occur more frequently.
+<br>
+
+### Explanatory Variables
+
+| Variable             | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `national_highway_rk`| Roadkill count on national, provincial, and highway roads                   |
+| `white_rk`           | Roadkill count on ordinary/local roads (non-national/provincial/highway)    |
+| `corridor_count`     | Number of ecological corridors within the grid                              |
+| `min_dist_to_corridor` | Minimum distance (m) to the nearest ecological corridor                   |
+| `wild_boar_count`    | Scaled estimate of wild boar distribution in the grid                       |
+| `roe_deer_count`     | Scaled estimate of roe deer distribution in the grid                        |
+| `white_road_grade`   | Categorical index (0–4) describing road presence and surrounding land use   |
+| `speed_proxy`        | Proxy for speed limits based on road type composition (highway, national)   |
+
 
 ### 3. Methodology & Summary
 
-  + LASSO regressions showed the best performance with a cross validation RMSE-score of 0.1121. Although there is a lot of multicollinearity among the variables, LASSO regression include feature selection; it does not select a substantial number of the available variables in its model, as it is supposed to do.
-  + The XGBoost model also performs very well with a cross validation RMSE of 0.1162.
-  + As those two algorithms are very different, averaging predictions is likely to improve the predictions. As the Lasso cross validated RMSE is better than XGBoost's CV score, I decided to weight the Lasso results double.
+  + With the **SGDClassifier**, clear overfitting was observed between the training and validation sets.  
+  + The **neural network with two hidden layers trained using SGD** achieved 100% accuracy on both the training and validation data.  
+ + Based on this stability, the neural network model was applied to predict Hongcheon grids, identifying the following as **high-risk areas (level 2)**:  
+  - `grid_333`  
+  - `grid_364`  
+  - `grid_494`  
+  - `grid_526`  
+
+These results highlight specific locations in Hongcheon that warrant further attention for roadkill mitigation and conservation planning.
 
 <br>
 
 ### 4. Code
 
-Please click [HERE](https://www.kaggle.com/erikbruin/house-prices-lasso-xgboost-and-a-detailed-eda/report) for the analysis report and code.
+Please click [HERE](https://github.com/yejiginakim/roadkill_analysis) for the analysis report and code.
 
 <br>
 

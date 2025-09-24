@@ -13,16 +13,16 @@ navbar:
       menu: 
       - text: "Predicting Roadkill Level in Hongcheon, Gangwondo, Korea"
         href: stat1.html
-      - text: "Predicting Airbnb Prices in NYC"
-        href: stat2.html
-    - text: "DB/SQL"
-      menu: 
-      - text: "Movie Explorer"
-        href: dbsql1.html
-    - text: "Visualization"
-      menu: 
-      - text: "Squid Game Elimination Analysis"
-        href: visualization1.html
+      # - text: "Predicting Airbnb Prices in NYC"
+        # href: stat2.html
+    # - text: "DB/SQL"
+      # menu: 
+      # - text: "Movie Explorer"
+        # href: dbsql1.html
+    # - text: "Visualization"
+      # menu: 
+      # - text: "Squid Game Elimination Analysis"
+        # href: visualization1.html
   right:
     - icon: fas fa-envelope
       href: contact.html

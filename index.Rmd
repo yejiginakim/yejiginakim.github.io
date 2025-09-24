@@ -9,13 +9,13 @@ output: html_document
 <br>
 
 <p align="center">
-<img src="images/profile_pic.jpeg" style="width:50%; border:0.5px solid; margin-right: 20px" align="center">
+<img src="images/profile_pic.jpeg" style="width:30%; border:0.5px solid; margin-right: 20px" align="center">
 </p>
 <br>
 
 
 <br><br><br>
-👋🏽 Hello, my name is Yeji Kim. nothing
+👋🏽 Hello, my name is Yeji Kim. 
 
 🎓 I hold an M.S. in Statistics from Stony Brook University, where I developed a strong foundation in both theoretical and applied statistics. I graduated in December 2024.
 

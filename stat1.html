@@ -338,7 +338,7 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="stat1.html">Predicting House Prices in Iowa</a>
+      <a href="stat1.html">Predicting Roadkill Level in Hongcheon, Gangwondo, Korea</a>
     </li>
     <li>
       <a href="stat2.html">Predicting Airbnb Prices in NYC</a>
@@ -404,7 +404,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">나의 Tableau 대시보드 삽입 예시</h1>
+<h1 class="title toc-ignore">Data Analysis-Roadkill Level</h1>
 
 </div>
 
@@ -412,8 +412,12 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/></p>
 <p><br><br><br></p>
-<div id="tableau-dashboard-삽입" class="section level2">
-<h2>Tableau Dashboard 삽입</h2>
+<div id="predicting-roadkill-level-in-hongcheon-gangwondo-korea"
+class="section level2">
+<h2><strong>Predicting Roadkill Level in Hongcheon, Gangwondo,
+Korea</strong></h2>
+<p>This dashboard shows the roadkill points that occurred in Hongcheon,
+Gangwon-do, Korea, during 2020, 2021, and 2022.</p>
 <div
 style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px;">
 <p><iframe
@@ -422,15 +426,7 @@ style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margi
     allowfullscreen
     loading="lazy"> </iframe></p>
 </div>
-</div>
-<div id="predicting-house-prices-in-iowa" class="section level2">
-<h2><strong>Predicting House Prices in Iowa</strong></h2>
-<p><img src="https://img.shields.io/badge/Using-Python-blue" /> <img
-src="https://img.shields.io/badge/-LASSO-red" /> <img
-src="https://img.shields.io/badge/-XGBoost-success" /></p>
 <p><br></p>
-<p>🚨<strong>THIS IS A FICTIONAL PROJECT MEANT AS AN EXAMPLE FOR THE
-STEPBYSTAT COMMUNITY.</strong></p>
 <p><br><br><br></p>
 <div id="figure" class="section level3">
 <h3>1. Figure</h3>
@@ -445,33 +441,94 @@ STEPBYSTAT COMMUNITY.</strong></p>
 </div>
 <div id="goal" class="section level3">
 <h3>2. Goal</h3>
-<p>To predict the final price of each home using 79 explanatory
-variables describing (almost) every aspect of residential homes in Ames,
-Iowa.</p>
-<p><br></p>
+<p><br> The ultimate goal is not only to predict roadkill risk levels
+(low, medium, high) in Hongcheon, but also to analyze the environmental
+and infrastructural characteristics of high-risk grids, providing deeper
+insights into why incidents occur more frequently. <br></p>
+</div>
+<div id="explanatory-variables" class="section level3">
+<h3>Explanatory Variables</h3>
+<table>
+<colgroup>
+<col width="22%" />
+<col width="77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>national_highway_rk</code></td>
+<td>Roadkill count on national, provincial, and highway roads</td>
+</tr>
+<tr class="even">
+<td><code>white_rk</code></td>
+<td>Roadkill count on ordinary/local roads
+(non-national/provincial/highway)</td>
+</tr>
+<tr class="odd">
+<td><code>corridor_count</code></td>
+<td>Number of ecological corridors within the grid</td>
+</tr>
+<tr class="even">
+<td><code>min_dist_to_corridor</code></td>
+<td>Minimum distance (m) to the nearest ecological corridor</td>
+</tr>
+<tr class="odd">
+<td><code>wild_boar_count</code></td>
+<td>Scaled estimate of wild boar distribution in the grid</td>
+</tr>
+<tr class="even">
+<td><code>roe_deer_count</code></td>
+<td>Scaled estimate of roe deer distribution in the grid</td>
+</tr>
+<tr class="odd">
+<td><code>white_road_grade</code></td>
+<td>Categorical index (0–4) describing road presence and surrounding
+land use</td>
+</tr>
+<tr class="even">
+<td><code>speed_proxy</code></td>
+<td>Proxy for speed limits based on road type composition (highway,
+national)</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div id="methodology-summary" class="section level3">
 <h3>3. Methodology &amp; Summary</h3>
 <ul>
-<li>LASSO regressions showed the best performance with a cross
-validation RMSE-score of 0.1121. Although there is a lot of
-multicollinearity among the variables, LASSO regression include feature
-selection; it does not select a substantial number of the available
-variables in its model, as it is supposed to do.</li>
-<li>The XGBoost model also performs very well with a cross validation
-RMSE of 0.1162.</li>
-<li>As those two algorithms are very different, averaging predictions is
-likely to improve the predictions. As the Lasso cross validated RMSE is
-better than XGBoost’s CV score, I decided to weight the Lasso results
-double.</li>
+<li>With the <strong>SGDClassifier</strong>, clear overfitting was
+observed between the training and validation sets.<br />
+</li>
+<li>The <strong>neural network with two hidden layers trained using
+SGD</strong> achieved 100% accuracy on both the training and validation
+data.<br />
+</li>
+<li>Based on this stability, the neural network model was applied to
+predict Hongcheon grids, identifying the following as <strong>high-risk
+areas (level 2)</strong>:<br />
+</li>
+<li><code>grid_333</code><br />
+</li>
+<li><code>grid_364</code><br />
+</li>
+<li><code>grid_494</code><br />
+</li>
+<li><code>grid_526</code></li>
 </ul>
+<p>These results highlight specific locations in Hongcheon that warrant
+further attention for roadkill mitigation and conservation planning.</p>
 <p><br></p>
 </div>
 <div id="code" class="section level3">
 <h3>4. Code</h3>
 <p>Please click <a
-href="https://www.kaggle.com/erikbruin/house-prices-lasso-xgboost-and-a-detailed-eda/report">HERE</a>
-for the analysis report and code.</p>
+href="https://github.com/yejiginakim/roadkill_analysis">HERE</a> for the
+analysis report and code.</p>
 <p><br></p>
 </div>
 </div>
