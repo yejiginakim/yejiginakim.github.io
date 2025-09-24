@@ -11,7 +11,7 @@ navbar:
       href: tutorials.html
     - text: "Stat/ML"
       menu: 
-      - text: "Predicting House Prices in Iowa"
+      - text: "Predicting Roadkill Level in Hongcheon, Gangwondo, Korea"
         href: stat1.html
       - text: "Predicting Airbnb Prices in NYC"
         href: stat2.html
