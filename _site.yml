@@ -7,7 +7,7 @@ output_dir: "."
 navbar:
   title: "Yeji Kim"
   left:
-    # - text: "Tutorials"
+    - text: "Stat/ML"
       # href: tutorials.html
     # - text: "Stat/ML"
       menu: 
