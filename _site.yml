@@ -7,9 +7,9 @@ output_dir: "."
 navbar:
   title: "Yeji Kim"
   left:
-    - text: "Tutorials"
-      href: tutorials.html
-    - text: "Stat/ML"
+    # - text: "Tutorials"
+      # href: tutorials.html
+    # - text: "Stat/ML"
       menu: 
       - text: "Predicting Roadkill Level in Hongcheon, Gangwondo, Korea"
         href: stat1.html
