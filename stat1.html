@@ -382,42 +382,32 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/></p>
 <p><br><br><br></p>
-<div id="predicting-roadkill-level-in-hongcheon-gangwondo-korea"
+<div id="predicting-roadkill-level-in-gangwondo-korea"
 class="section level2">
-<h2><strong>Predicting Roadkill Level in Hongcheon, Gangwondo,
-Korea</strong></h2>
-<p>This dashboard shows the roadkill points that occurred in Hongcheon,
-Gangwon-do, Korea, during 2020, 2021, and 2022.</p>
+<h2><strong>Predicting Roadkill Level in Gangwondo, Korea</strong></h2>
+<p>This portfolio page summarizes my project to predict grid-level
+roadkill risk in Gangwon-do and to identify <strong>high-risk grids in
+Hongcheon</strong>.</p>
+Interactive map (2020–2022 roadkill points)
 <div
-style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px;">
-<p><iframe
-    src="https://public.tableau.com/shared/7Z8JDTFZZ?:display_count=n&:origin=viz_share_link&:toolbar=no&:showVizHome=no"
-    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-    allowfullscreen
-    loading="lazy"> </iframe></p>
+style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px; border-radius:8px;">
+<iframe src="https://public.tableau.com/shared/7Z8JDTFZZ?:display_count=n&:origin=viz_share_link&:toolbar=no&:showVizHome=no" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen loading="lazy">
+</iframe>
 </div>
 <p><br></p>
 <p><br><br><br></p>
-<div id="figure" class="section level3">
-<h3>1. Figure</h3>
-<p align="center">
-<img src="images/predict_houseprice.png" style="width:80%; border:0px solid; margin-right: 20px" align="center">
-</p>
-<p align="center">
-[Fig. LASSO regression features by importance]
-</p>
 <p><br></p>
 <p><br><br></p>
-</div>
 <div id="goal" class="section level3">
-<h3>2. Goal</h3>
+<h3>1. Goal</h3>
 <p><br> The ultimate goal is not only to predict roadkill risk levels
 (low, medium, high) in Hongcheon, but also to analyze the environmental
 and infrastructural characteristics of high-risk grids, providing deeper
-insights into why incidents occur more frequently. <br></p>
+insights into why incidents occur more frequently.</p>
+<p><br> <br><br></p>
 </div>
 <div id="explanatory-variables" class="section level3">
-<h3>Explanatory Variables</h3>
+<h3>2. Explanatory Variables</h3>
 <table>
 <colgroup>
 <col width="22%" />
@@ -467,32 +457,59 @@ national)</td>
 </tr>
 </tbody>
 </table>
+<p><br><br></p>
 </div>
-<div id="methodology-summary" class="section level3">
-<h3>3. Methodology &amp; Summary</h3>
+<div id="methodology" class="section level3">
+<h3>3. Methodology</h3>
 <ul>
-<li>With the <strong>SGDClassifier</strong>, clear overfitting was
-observed between the training and validation sets.<br />
+<li><strong>Step 1:</strong> Split non-Hongcheon data into
+Train/Validation for model selection.<br />
 </li>
-<li>The <strong>neural network with two hidden layers trained using
-SGD</strong> achieved 100% accuracy on both the training and validation
-data.<br />
+<li><strong>Step 2:</strong> Refit the best-performing model on the
+<strong>entire non-Hongcheon dataset</strong>.<br />
 </li>
-<li>Based on this stability, the neural network model was applied to
-predict Hongcheon grids, identifying the following as <strong>high-risk
-areas (level 2)</strong>:<br />
+<li><strong>Step 3:</strong> Apply the final model to
+<strong>Hongcheon</strong> (test set).<br />
 </li>
-<li><code>grid_333</code><br />
-</li>
-<li><code>grid_364</code><br />
-</li>
-<li><code>grid_494</code><br />
-</li>
-<li><code>grid_526</code></li>
+<li>Metrics reported: <strong>Validation Accuracy, Macro-F1</strong>,
+and <strong>Test Accuracy, Macro-F1</strong>.</li>
 </ul>
-<p>These results highlight specific locations in Hongcheon that warrant
-further attention for roadkill mitigation and conservation planning.</p>
+<p><br><br></p>
+</div>
+<div id="model-comparison-summary" class="section level3">
+<h3>4. Model Comparison (Summary)</h3>
+<strong>Interpretation:</strong><br />
+Gradient Boosting achieved perfect validation scores and remained strong
+after refitting on all non-Hongcheon data, so it was selected as the
+<strong>final model</strong> for Hongcheon inference. <br>
+<div
+style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px; border-radius:8px;">
+<iframe src="https://public.tableau.com/views/ModelComparison_17590544938270/1_1?:showVizHome=no&:embed=true" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen loading="lazy">
+</iframe>
+</div>
+<p><br><br></p>
+</div>
+<div id="predicted-high-risk-grids-in-hongcheon" class="section level3">
+<h3>5. Predicted High-Risk Grids in Hongcheon</h3>
+<p>Using the final <strong>Gradient Boosting</strong> model trained on
+<strong>all non-Hongcheon</strong> grids, we predicted Hongcheon risk
+levels and identified the following as <strong>high risk (class =
+2)</strong>:</p>
+<ul>
+<li><code>grid_364</code></li>
+</ul>
+<p>This result highlights a specific spatial area in Hongcheon that
+warrants closer ecological and infrastructural review.</p>
+<div
+style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px;">
+<p><iframe
+    src="https://public.tableau.com/views/HongcheonRoadkill/5?:showVizHome=no&:embed=true"
+    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+    allowfullscreen
+    loading="lazy"> </iframe></p>
+</div>
 <p><br></p>
+<p><br><br></p>
 </div>
 <div id="code" class="section level3">
 <h3>4. Code</h3>
