@@ -13,8 +13,8 @@ navbar:
       menu: 
       - text: "Predicting Roadkill Level in Hongcheon, Gangwondo, Korea"
         href: stat1.html
-      # - text: "Predicting Airbnb Prices in NYC"
-      #   href: stat2.html
+    - text: "Portfolio"
+      href: files/YejiKim_Portfolio.pptx.pdf
     # - text: "DB/SQL"
     #   menu: 
     #   - text: "Movie Explorer"
