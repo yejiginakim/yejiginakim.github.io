@@ -81,7 +81,7 @@ The ultimate goal is not only to predict roadkill risk levels (low, medium, high
 ### 4. Model Comparison (Summary)
 
 **Interpretation:**  
-Gradient Boosting achieved perfect validation scores and remained strong after refitting on all non-Hongcheon data, so it was selected as the **final model** for Hongcheon inference.
+SGD achieved perfect validation scores and remained strong after refitting on all non-Hongcheon data, so it was selected as the **final model** for Hongcheon inference.
 <br>
 <div style="position:relative; padding-bottom:62.5%; height:0; overflow:hidden; margin-bottom:20px; border-radius:8px;"> <iframe src="https://public.tableau.com/views/ModelComparison_17590544938270/1_1?:showVizHome=no&:embed=true" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen loading="lazy"> </iframe> </div>
 
